@@ -1,0 +1,253 @@
+body {
+    color: white;
+    background-color: black;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.menu-container li {
+    margin: 20px;
+    font-weight: 700;
+}
+
+.menu-container li:hover {
+    color: rgb(134, 152, 241);
+    cursor: pointer;
+}
+
+.resume-btn {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: blue;
+    color: white;
+    border: none;
+    height: 50px;
+    padding: 0px 8px;
+    border-radius: 10px;
+}
+
+.resume-btn button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.web {
+    padding: 20px 0;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.indro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightdiv {
+    margin-top: 50px;
+}
+
+#portfolio {
+    margin-top: 100px;
+}
+
+.portfolio {
+    text-align: center;
+    padding: 50px;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(130, 130, 130);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    width: 100%;
+    max-width: 350px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.social-icons > a {
+    font-size: 30px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.expertise {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.spanSkill {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spanSkill > span {
+    display: inline-block;
+    margin: 10px;
+    background: #605f5f;
+    padding: 8px 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contract-us {
+    padding: 50px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn {
+    width: 25%;
+    background-color: rgb(24, 86, 125);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+@media only screen and (max-width: 992px) {
+    .portfolio {
+        font-size: 50px;
+        padding: 30px;
+    }
+
+    .card-body {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .menu-container {
+        font-size: 16px;
+    }
+
+    .menu-container li {
+        margin: 15px;
+    }
+
+    .contract-us {
+        width: 80%;
+    }
+
+    .spanSkill > span {
+        font-size: 18px;
+        padding: 6px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        font-size: 16px;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .menu-container li {
+        margin: 10px 0;
+    }
+
+    .portfolio {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .card-body {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .expertise {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .contract-us {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .submit-btn {
+        width: 50%;
+    }
+}
